@@ -1,0 +1,55 @@
+
+.allntf-wrapper{
+    display:'flex';
+    flex-direction: column;
+    z-index: 99999;
+    position: absolute;
+    right:0;
+    top:0;
+    width:25%;
+    transition:0.3s all;
+    /* height: 100vh; */
+  
+  }
+  .ntf-wrapper{
+    border-radius: 5px;
+    user-select: none;
+    transition:0.5s all;
+    position: relative;
+    /* position: absolute; */
+    /* padding:25px; */
+    /* right:2%; */
+    /* bottom:-60%; */
+    margin:2%;
+    padding:1vh 3vh;
+    opacity: 0;
+    z-index: 200;
+    background-color:white;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .ntf-titulo{
+    font-size:1.5vw;
+    margin:0;
+    padding:0;
+    font-weight: 100;
+  }
+  
+  .ntf-close{
+    position: absolute;
+    right:4%;
+    font-size:1.6vw;
+    top:0;
+    font-weight: 100;
+    cursor: pointer;
+    
+  }
+  
+  .ntf-des{
+    font-size:18px;
+    font-weight: 100;
+    padding-left:2vh;
+  }
+  
+  
+  /* Notificacion */

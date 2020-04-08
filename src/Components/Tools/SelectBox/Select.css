@@ -1,0 +1,32 @@
+.select-yo{
+    padding:1vh;
+    font-size:0.9vw;
+    border-radius: 3px;
+    background-color:transparent;
+    width: 100%;
+    /* border-color: var(--primary-color); */
+    border:2px solid var(--primary-color);
+    /* background-color:rgba(0,0,0,0.1); */
+    /* border:none; */
+}
+
+.select-yo:focus{
+    outline: rgba(0,0,0,0.2);
+    outline-style: solid;
+    outline-width: 2px;
+
+}
+.select-des{
+    /* display: block; */
+    position: absolute;
+    top:-20px;
+    background-color:var(--theme-background);
+    padding:0vh 5px;
+    left:20px;
+}
+
+.select-wrapper{
+    margin:2vh 0vh;
+    width: 100%;
+    position: relative;
+}

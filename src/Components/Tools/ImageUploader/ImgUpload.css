@@ -1,0 +1,82 @@
+.upload-wrapper{
+    width:25vh;
+    height: 25vh;
+    border:1px solid lightgray;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.upload-wrapper input{
+    opacity: 0;
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+.upload-wrapper label{ 
+    width: 100%;
+    text-align: center;
+    margin:0;
+    z-index:10;
+}
+.upload-wrapper label > p{
+    z-index:10;
+    margin:0;
+
+}
+
+/* Div ya subidas -> */
+.uploaded-wrapper{ 
+    width: 100%;
+    float:left;
+    position: relative;
+    /* height: 20vh; */
+}
+.uploaded-wrapper > .img-wrp{ 
+    height: 35%;
+    /* float:left; */
+    display: inline-block;
+    width: 35%;
+    margin:2% 2%;
+    
+} 
+.uploaded-wrapper > .img-wrp > img{ 
+    z-index: 60;
+    width:100%;
+    height: 100%;
+    /* width: 100%; */
+    object-fit: cover;
+}
+
+.uploaded-wrapper > .img-wrp> img:focus{ 
+    position: absolute;
+    width: 10vh;
+    height: 10vh;
+    right: 0;
+    top: -32vh;
+    transform: scale(6);
+}
+
+.img-wrp{
+    position: relative;
+}
+.img-wrp > p{
+    position: absolute;
+    top:0;
+    opacity: 0;
+    right:-20%;
+    margin:0;
+    background-color:white;
+    padding:5px 16px;
+    /* right:0; */
+    cursor: pointer;
+}
+
+.img-wrp:hover > p{
+    opacity:1;
+    right:0;
+}

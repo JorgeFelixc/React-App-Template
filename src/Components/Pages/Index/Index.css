@@ -1,0 +1,21 @@
+.index-wrapper{
+    /* background-image: url('../../../Assets/img/expo6.jpg');
+    background-size: cover; */
+    background-color:var(--theme-bg);
+    color:var(--theme-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.index-wrapper > h1{ 
+    font-weight: 100;
+    font-size:4em;
+}
+
+.index-wrapper > blockquote{
+    background-color:rgba(0, 0, 0, .4);
+    border-radius: 6px;
+    padding:10px 20px;
+}
