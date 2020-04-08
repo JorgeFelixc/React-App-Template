@@ -20,7 +20,6 @@ function ImgUpload({name, valor, descripcion, imagenes, id}) {
       if(Array.isArray(imagenes)){ 
         const buffer = imagenes.map((item) => { 
           const uri = HOST + item;
-          console.log(uri);
           return uri;
         });
         setFiles([...buffer]);

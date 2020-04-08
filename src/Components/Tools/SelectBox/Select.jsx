@@ -8,13 +8,11 @@ function Select({endpoint, keyprop, name, valor, valueprop, datos, parametros })
     const [paramInput, setParamInput] = useState(null);
     async function GetServiceData(){
         const serviceData = await GetDataNoCredentials(endpoint)
-        console.log("data:",serviceData["response"]["estado"]);
         if(serviceData){
             if(Array.isArray(keyprop)){ 
                 var bufferData = serviceData;
                 keyprop.forEach((i) => { 
                     bufferData = bufferData[i];
-                    console.log(i,"->",bufferData);
                 })
                 setData([...bufferData]);
             }
@@ -45,13 +43,11 @@ function Select({endpoint, keyprop, name, valor, valueprop, datos, parametros })
 
     async function GetServiceParamData(endpoint){
         const serviceData = await GetDataNoCredentials(endpoint)
-        console.log("data:",serviceData["response"]["estado"]);
         if(serviceData){
             if(Array.isArray(keyprop)){ 
                 var bufferData = serviceData;
                 keyprop.forEach((i) => { 
                     bufferData = bufferData[i];
-                    console.log(i,"->",bufferData);
                 })
                 setData([...bufferData]);
             }
@@ -91,7 +87,6 @@ function Select({endpoint, keyprop, name, valor, valueprop, datos, parametros })
             {
                 data.length > 0 &&
                 data.map((item, index) => { 
-                    console.log(item);
                     return <option value={valueprop ? valueprop : index }> {item} </option>
                 })
             }

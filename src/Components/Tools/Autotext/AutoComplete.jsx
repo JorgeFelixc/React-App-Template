@@ -17,12 +17,10 @@ function AutoCompleteBox({get, nombre, index, placeholder}) {
     }
 
     function Filter(event){
-      console.log("event->",event.target);
       
     }
 
     function show(event){
-      console.log("focus", event.target.value);
     }
     useEffect(() => {
       GetDataServer();

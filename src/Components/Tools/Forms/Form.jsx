@@ -173,7 +173,6 @@ function Form({nombre, endpoint,method, campos, buttonTitle, globalState, datos}
                         if(datos){
                             if(datos.hasOwnProperty("data")){
                                 const checkData =  Object.entries(datos["data"]).filter(res => res[0] === item.nombre )[0][1];
-                                // console.log("checkdata:", checkData);
                                 return <Checklist get={item.data} name={nombre} valor={item.nombre} keyvalue={item.key} value={item.value} datos={checkData} />
                             }
 
@@ -184,7 +183,6 @@ function Form({nombre, endpoint,method, campos, buttonTitle, globalState, datos}
                         if(datos){
                             if(datos.hasOwnProperty("data")){
                                 const imgData =  Object.entries(datos["data"]).filter(res => res[0] === item.nombre )[0][1];
-                                // console.log("datos de imagene:",imgData);
                                 return <ImgUpload name={nombre} descripcion={item.placeholder} id={datos.id} valor={item.nombre} imagenes={imgData} />
                             }
                         }
@@ -197,9 +195,6 @@ function Form({nombre, endpoint,method, campos, buttonTitle, globalState, datos}
                         }
 
                         if(item.parametros){
-                            // if(item.formPiece){ console.error("No tienes formPiece en el select, si le enviaste parametros"); return; }
-                            // const getParamsURI = GetParametros(item.formPiece);
-                            // const URI = item.parametros.URI + getParamsURI;
                             return <Select name={nombre} endpoint={item.data} parametros={item.parametros} valor={item.nombre} keyprop={["response", "estado"]} /> 
 
 

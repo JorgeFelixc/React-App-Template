@@ -8,7 +8,6 @@ function Checklist({ get, name,valor, index, keyvalue, value, datos }) {
 
   async function GetDataServer() {
     const getService = await GetData(get);
-    console.log("Regreso ->", getService);
     if (getService) {
       if (getService["error"]) {
         return;
