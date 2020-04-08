@@ -17,5 +17,6 @@
 .index-wrapper > blockquote{
     background-color:rgba(0, 0, 0, .4);
     border-radius: 6px;
+    color:white;
     padding:10px 20px;
 }

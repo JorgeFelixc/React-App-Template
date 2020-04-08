@@ -7,11 +7,6 @@ import Page from './Page-Structure/Page';
 
 function App() {
     const UserInitialState = {
-        user: {
-            name: 'no-user',
-            theme: 'default',
-            tipoUsuario: '0',
-        },
         notifications: [
 
         ],
@@ -19,16 +14,7 @@ function App() {
     };
 
     const userReducer = (state, action) => {
-        console.log("Stado", state);
-        console.log("Action:", action);
         switch (action.type) {
-            case 'LOGIN':
-                return {
-                    ...state,
-                    theme: action.newTheme,
-                    name: action.newName,
-                    tipoUsuario: action.newTipoUsuario,
-                };
             case 'NOTIFICATION':
                 let bufferNotf = state.notifications;
                 bufferNotf.push(action.newNotifications);

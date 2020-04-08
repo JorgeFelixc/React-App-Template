@@ -9,3 +9,4 @@ This project have the basis to make a react aplication, things like:
 In the Index page, you have a example how it use GlobalState and active notifications
 and how change theme of the app.
 
+
